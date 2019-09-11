@@ -64,7 +64,7 @@ $(document).on("click", ".topic-button", function() {
             newImage.attr("class", "created-gifs");
             newImage.attr("data-state", "still");
             newImage.attr("data-still", results[j].images.fixed_height_still.url);
-            newImage.attr("data-animated", results[j].image.original.url);
+            newImage.attr("data-animated", results[j].images.original.url);
 
 			$("#animal-gif").append(newImage);
 
