@@ -1,0 +1,17 @@
+
+
+
+
+
+* {
+	margin-right: 8px;
+	background-color: gray;
+	border-color: green;
+	border-width: 2px;
+}
+
+
+  primary:hover {
+	background-color: green;
+	border-color: black;
+}
