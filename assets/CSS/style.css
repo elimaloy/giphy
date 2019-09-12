@@ -1,17 +1,21 @@
 
 
-
-
-
 * {
-	margin-right: 8px;
-	background-color: gray;
-	border-color: green;
-	border-width: 2px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+	background-color: #dad6d6;
+}
+.created-gifs{
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+
+}
+
+#animal-gif{
+	background-color: white;
+	box-shadow: 10px 10px 20px 20px rgb(156, 156, 156);
 }
 
 
-  primary:hover {
-	background-color: green;
-	border-color: black;
-}

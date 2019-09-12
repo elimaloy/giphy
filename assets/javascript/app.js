@@ -1,5 +1,5 @@
 //topics array
-var topics = 	["dogs", "cats", "pigs",];
+var topics = 	["pug", "english bulldog", "husky", "mastiff"];
 				
 
 
@@ -56,9 +56,9 @@ $(document).on("click", ".topic-button", function() {
 		//creates a new <img> tag
 		
 		for (var j = 0; j < results.length; j++) {
-
+        console.log (results[0]);
 			var newImage = $("<img>");
-			newImage.attr("src", results[j].images.fixed_height_still.url);
+			newImage.attr("src", results[j].images.original.url);
 			newImage.attr("alt", "missing gif");
             newImage.attr("id", "new-gif" + j);
             newImage.attr("class", "created-gifs");
@@ -84,9 +84,14 @@ if ($(this).attr("data-state") === "still") {
     $(this).attr("data-state", "animated");
     // and switch the src attribute to the animated version
 
+} else {
+
+	$(this).attr("src", $(this).attr("data-still"));
+	$(this).attr("data-state", "still");
+
 }
 
 // else if the state is animated, switch it to still
 // and switch the src back to the still version 
 
-})
+});
